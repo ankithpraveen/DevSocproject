@@ -1,0 +1,221 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+    <title>Result</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+
+        body {
+            background: #fff;
+        }
+
+        .input-field input[type=date]:focus+label,
+        .input-field input[type=text]:focus+label,
+        .input-field input[type=email]:focus+label,
+        .input-field input[type=password]:focus+label {
+            color: #e91e63;
+        }
+
+        .input-field input[type=date]:focus,
+        .input-field input[type=text]:focus,
+        .input-field input[type=email]:focus,
+        .input-field input[type=password]:focus {
+            border-bottom: 2px solid #e91e63;
+            box-shadow: none;
+        }
+
+        #back2Top {
+            width: 40px;
+            line-height: 40px;
+            overflow: hidden;
+            z-index: 999;
+            display: none;
+            cursor: pointer;
+            -moz-transform: rotate(270deg);
+            -webkit-transform: rotate(270deg);
+            -o-transform: rotate(270deg);
+            -ms-transform: rotate(270deg);
+            transform: rotate(270deg);
+            position: fixed;
+            bottom: 50px;
+            right: 10px;
+            background-color: #DDD;
+            color: #555;
+            text-align: center;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        #back2Top:hover {
+            background-color: #DDF;
+            color: #000;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav class="teal">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">Quiz</a>
+                    <a href="#" data-target="mobile-links" class="sidenav-trigger"><i
+                            class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <!-- Dropdown menu -->
+                            <a class="dropdown-trigger" hover="true" data-target="dropdown1">1<i
+                                    class="material-icons small white-text right">arrow_drop_down</i></a>
+                            <!-- Dropdown Structure -->
+                            <ul id='dropdown1' class='dropdown-content'>
+                                <li><a href="#">
+                                        <h6>1.1</h6>
+                                    </a></li>
+                                <li><a href="#">
+                                        <h6>1.2</h6>
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#AboutUs">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <a href="#">4</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-trigger" for="user" hover="true" data-target="dropdown2" href="#"><i
+                                    class="material-icons white-text medium">person_pin</i></a>
+                            <!-- Dropdown Structure -->
+                            <ul id='dropdown2' class='dropdown-content'>
+
+                                <a href="#">Login</a>
+
+
+
+                            </ul>
+
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-links">
+        <div class="container">
+            <li>
+                <label class="dropdown-trigger" for="user" hover="true" data-target="dropdown4" href="#"><i
+                        class="center-align material-icons teal-text medium">person_pin</i></label>
+                <!-- Dropdown Structure -->
+                <ul id='dropdown4' class='dropdown-content collection'>
+
+                    <li><a href="#">
+                            <h6 class="teal-text">Login</h6>
+                        </a></li>
+
+
+                </ul>
+            </li>
+        </div>
+        <li>
+            <!-- Dropdown menu -->
+            <a class="dropdown-trigger teal-text" hover="true" data-target="dropdown3" href="#">1<i
+                    class="material-icons small teal-text right">arrow_drop_down</i></a>
+            <!-- Dropdown Structure -->
+            <ul id='dropdown3' class='dropdown-content collection'>
+                <li><a href="#" class="teal-text">
+                        <h6>1.1</h6>
+                    </a></li>
+                <li><a href="#" class="teal-text">
+                        <h6>1.2</h6>
+                    </a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#AboutUs" class="teal-text">2</a>
+        </li>
+        <li>
+            <a href="#" class="teal-text">3</a>
+        </li>
+        <li>
+            <a href="#" class="teal-text">4</a>
+        </li>
+    </ul>
+
+
+    <!-- Section: Result -->
+    <section class="section section-icons grey lighten-4 center">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12">
+                    
+                    <div class="card-panel">
+                        
+                        <i class="material-icons large teal-text">thumb_up</i>
+                        <h4 class="center">__%</h4>
+                        <h4>Final Result</h4>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.scrollspy').scrollSpy();
+            $('.dropdown-trigger').dropdown({
+                hover: true,
+                coverTrigger: false,
+            });
+        })
+    </script>
+</body>
+
+</html>
