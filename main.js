@@ -74,7 +74,7 @@ function checkguess(id, guess) {
 
 var questions = [
     ["In which English county would you find Stonehenge?", ["Worcestershire", "Wiltshire", "Barbados", "Essex"], "Wiltshire"],
-    ["What ois the study of dogs called?", ["Cynology", "Caninology", "Coniology", "Tykology"], "Cynology"],
+    ["What is the study of dogs called?", ["Cynology", "Caninology", "Coniology", "Tykology"], "Cynology"],
     ["What is Lightning McQueen's number in Cras", ["57", "69", "95", "420"], "95"],
     ["What is Anitidaephobia?", ["The fear that somewhere, somehow, a duck is watching you", "The fear of houses", "The persistent, abnormal and unwarranted fear of bathing, washing or cleaning", "The fear of peanut butter sticking to the roof of your mouth"], "The fear that somewhere, somehow, a duck is watching you"],
     ["What is Baby Yoda's name?", ["The Child", "Yoda", "Grogu", "Yaddle"], "Grogu"],
