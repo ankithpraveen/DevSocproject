@@ -18,13 +18,11 @@ function addhtml(id, html) {
 }
 
 function totscore() {
-    console.log(sessionStorage.getItem("score"));
-    console.log(sessionStorage.getItem("totques"));
+
     var ansdiv = document.getElementById("answers");
     for (var i = 0; i < sessionStorage.getItem("totques"); i++) {
         ansdiv.innerHTML += "<h5>Q. " + sessionStorage.getItem("ques" + i) + "<br>A. " + sessionStorage.getItem("ans" + i);
-        console.log(sessionStorage.getItem("ques" + i));
-        console.log(sessionStorage.getItem("ans" + i));
+
     }
     var pc=(sessionStorage.getItem("score") * 100 / sessionStorage.getItem("totques"));
     if (pc > 80) {
@@ -79,10 +77,9 @@ function checkguess(id, guess) {
 }
 
 var questions = [
-    ["Who was the first President of the United States?", ["George Washington", "Thomas Jefferson", "Thomas Edison", "I don't know"], "George Washington"],
-    ["What is the answer to the Ultimate Question of Life, the Universe, and Everything?", ["Pi", "42", "Wah?", "I don't know"], "42"],
-    ["Do you love to code?", ["No", "Yes", "Hell Yeah", "Maybe"], "Hell Yeah"],
-    ["What's the best programming language?", ["Javascript", "C#", "Php", "Python"], "Javascript"],
+    ["In which English county would you find Stonehenge?", ["Worcestershire", "Wiltshire", "Barbados", "Essex"], "Wiltshire"],
+    ["What ois the study of dogs called?", ["Cynology", "Caninology", "Coniology", "Tykology"], "Cynology"],
+    ["DWhat is Anitidaephobia?", ["The fear that somewhere, somehow, a duck is watching you", "The fear of houses", "The persistent, abnormal and unwarranted fear of bathing, washing or cleaning", "The fear of peanut butter sticking to the roof of your mouth"], "The fear that somewhere, somehow, a duck is watching you"],
+    ["What is Baby Yoda's name", ["The Child", "Yoda", "Grogu", "Yaddle"], "Grogu"],
 ];
 
-nextques();
