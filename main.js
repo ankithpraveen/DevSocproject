@@ -24,6 +24,7 @@ function totscore()
 {
     console.log(sessionStorage.getItem("score"));
     console.log(sessionStorage.getItem("totques"));
+    console.log(sessionStorage.getItem("ques"));
     addhtml("finalres","<i class=\"material-icons large cyan-text\">thumb_up</i><br><h2> Your score is: " + (sessionStorage.getItem("score")*100/sessionStorage.getItem("totques")) + "%</h2>" + "<h4>Final Result</h4>");
 }
 
@@ -35,6 +36,7 @@ function nextques()
         window.location.replace("result.html");
         sessionStorage.setItem("score",score);
         sessionStorage.setItem("totques",questions.length);
+        sessionStorage.setItem("ques",questions);
     }
     else
     {
