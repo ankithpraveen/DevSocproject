@@ -82,6 +82,6 @@ var questions = [
     ["Who voices Maui in Moana?", ["Dwayne Johnson", "Vin Diesel", "Zac Efron", "Chadwick Boseman"], "Dwayne Johnson"],
     ["What is the turtle's name in Finding Nemo?", ["Coral", "Bruce", "Chum", "Crush"], "Crush"],
     ["How many eyelids do camels have?", ["4", "1", "3", "7"], "3"],
-    ["Which is the smalled conuntry in the world?", ["New Zealand", "Monaco", "Singapore", "Vatican City"], "Vatican City"],
+    ["Which is the smallest country in the world?", ["New Zealand", "Monaco", "Singapore", "Vatican City"], "Vatican City"],
 ];
 
