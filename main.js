@@ -39,7 +39,7 @@ function totscore() {
     else if (pc > 40) {
         var img = "https://upload.wikimedia.org/wikipedia/en/1/1b/NPC_wojak_meme.png";
     }
-    else if (pc > 30) {
+    else if (pc > 20) {
         var img = "https://i.kym-cdn.com/entries/icons/original/000/017/039/pressf.jpg";
     }
     else {
