@@ -20,13 +20,33 @@ function addhtml(id, html) {
 function totscore() {
     console.log(sessionStorage.getItem("score"));
     console.log(sessionStorage.getItem("totques"));
-    var ansdiv =document.getElementById("answers");
+    var ansdiv = document.getElementById("answers");
     for (var i = 0; i < sessionStorage.getItem("totques"); i++) {
-        ansdiv.innerHTML+="<h5>Q. "+sessionStorage.getItem("ques" + i)+"<br>A. "+sessionStorage.getItem("ans" + i);
+        ansdiv.innerHTML += "<h5>Q. " + sessionStorage.getItem("ques" + i) + "<br>A. " + sessionStorage.getItem("ans" + i);
         console.log(sessionStorage.getItem("ques" + i));
         console.log(sessionStorage.getItem("ans" + i));
     }
-    addhtml("finalres", "<i class=\"material-icons large cyan-text\">thumb_up</i><br><h2> Your score is: " + (sessionStorage.getItem("score") * 100 / sessionStorage.getItem("totques")) + "%</h2>" + "<h4>Final Result</h4>");
+    var pc=(sessionStorage.getItem("score") * 100 / sessionStorage.getItem("totques"));
+    if (pc > 80) {
+        var img = "https://i.imgflip.com/4/2x75fl.jpg";
+    }
+    else if (pc>60)
+    {
+        var img="https://i.ytimg.com/vi/fHS8tHKlgw4/mqdefault.jpg"
+    }
+    else if (pc>40)
+    {
+        var img="https://upload.wikimedia.org/wikipedia/en/1/1b/NPC_wojak_meme.png"
+    }
+    else if (pc>30)
+    {
+        var img="https://i.kym-cdn.com/entries/icons/original/000/017/039/pressf.jpg"
+    }
+    else
+    {
+        var img="https://i.pinimg.com/originals/15/74/ac/1574ac1ef7a84a4bd69e83308a48e783.jpg"
+    }
+    addhtml("finalres", "<i class=\"material-icons large cyan-text\">thumb_up</i><br><h4>Final Result</h4><h2> Your score is: " + (sessionStorage.getItem("score") * 100 / sessionStorage.getItem("totques")) + "%</h2><br><img src=\"" + img + "\"><\img>");
 }
 
 function nextques() {
@@ -37,7 +57,7 @@ function nextques() {
         sessionStorage.setItem("totques", questions.length);
         for (var i = 0; i <= questions.length; i++) {
             sessionStorage.setItem("ques" + i, questions[i][0]);
-            sessionStorage.setItem("ans"+i,questions[i][2]);
+            sessionStorage.setItem("ans" + i, questions[i][2]);
         }
     }
     else {
