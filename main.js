@@ -29,17 +29,17 @@ function totscore() {
     {
         var img = "https://i.imgflip.com/4/2x75fl.jpg";
     }
-    if (pc > 80) 
+    if (pc >= 80) 
     {
         var img = "https://media.wired.com/photos/5e3246cd56bcac00087f0a1e/master/pass/Culture-Success-Meme-Kid.jpg";
     }
-    else if (pc > 60) {
+    else if (pc >= 60) {
         var img = "https://i.ytimg.com/vi/fHS8tHKlgw4/mqdefault.jpg";
     }
-    else if (pc > 40) {
+    else if (pc >= 40) {
         var img = "https://upload.wikimedia.org/wikipedia/en/1/1b/NPC_wojak_meme.png";
     }
-    else if (pc > 20) {
+    else if (pc >= 20) {
         var img = "https://i.kym-cdn.com/entries/icons/original/000/017/039/pressf.jpg";
     }
     else {
