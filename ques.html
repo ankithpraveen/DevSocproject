@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 
-    <title>Result</title>
+    <title>Question</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+
 </head>
 
-<body onload=totscore()>
+<body>
     <div class="navbar-fixed">
         <nav class="cyan">
           <div class="container">
@@ -49,20 +50,38 @@
   
       </ul>
 
-    <!-- Section: Result -->
-    <section class="section section-icons grey lighten-4 center">
-        <div class="container" id="finalres">
+
+    <!-- Section: Question -->
+    <section class="section section-icons grey lighten-4">
+        <div class="container" id="quiz">
             <div class="row">
                 <div class="col s12 m12">
-                    
+
                     <div class="card-panel">
-                        
-                      
-                    </div>
+
+
+                        <h4 id="question"></h4>
+                        <h3 id="score"></h3>
+
+        <h6 id="choice0"></h6>
+        <a class="waves-effect waves-light btn cyan" id="guess0">Select Answer</a>
+
+        <h6 id="choice1"></h6>
+        <a class="waves-effect waves-light btn cyan" id="guess1">Select Answer</a>
+        <h6 id="choice2"></h6>
+        <a class="waves-effect waves-light btn cyan" id="guess2">Select Answer</a>
+        <h6 id="choice3"></h6>
+        <a class="waves-effect waves-light btn cyan" id="guess3">Select Answer</a>
+                        <br>
+            
+
+                   
                 </div>
-                
+
             </div>
         </div>
+
+</div>
     </section>
 
 

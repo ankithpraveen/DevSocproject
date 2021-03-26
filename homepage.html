@@ -14,102 +14,25 @@
     <title>Home</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-      <style>
-        .button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-}
-
-        body {
-          display: flex;
-          min-height: 100vh;
-          flex-direction: column;
-        }
-    
-        main {
-          flex: 1 0 auto;
-        }
-    
-        body {
-          background: #fff;
-        }
-    
-        .input-field input[type=date]:focus+label,
-        .input-field input[type=text]:focus+label,
-        .input-field input[type=email]:focus+label,
-        .input-field input[type=password]:focus+label {
-          color: #e91e63;
-        }
-    
-        .input-field input[type=date]:focus,
-        .input-field input[type=text]:focus,
-        .input-field input[type=email]:focus,
-        .input-field input[type=password]:focus {
-          border-bottom: 2px solid #e91e63;
-          box-shadow: none;
-        }
-        #back2Top {
-    width: 40px;
-    line-height: 40px;
-    overflow: hidden;
-    z-index: 999;
-    display: none;
-    cursor: pointer;
-    -moz-transform: rotate(270deg);
-    -webkit-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg);
-    position: fixed;
-    bottom: 50px;
-    right: 10px;
-    background-color: #DDD;
-    color: #555;
-    text-align: center;
-    font-size: 30px;
-    text-decoration: none;
-}
-#back2Top:hover {
-    background-color: #DDF;
-    color: #000;
-}
-      </style>
+  
 
   </head>
 
   <body>
     <div class="navbar-fixed">
-      <nav class="teal">
+      <nav class="cyan">
         <div class="container">
           <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Quiz</a>
+            <a class="brand-logo" href="homepage.html">Quiz</a>
             <a href="#" data-target="mobile-links" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
               <li>
-              <!-- Dropdown menu -->
-                <a class="dropdown-trigger" hover="true" data-target="dropdown1">1<i class="material-icons small white-text right">arrow_drop_down</i></a>
-              <!-- Dropdown Structure -->
-              <ul id='dropdown1' class='dropdown-content'>
-                  <li><a href="#"><h6>1.1</h6></a></li>
-                  <li><a href="#"><h6>1.2</h6></a></li>
-              </ul>
+                <a href="homepage.html"> <i class="material-icons white-text">home</i></a>
               </li>
               <li>
-                <a href="#AboutUs">2</a>
+                <a href="#AboutUs">About Us</a>
               </li>
-              <li>
-                <a href="#">3</a>
-              </li>
-              <li>
-                <a href="#">4</a>
-              </li>
+              
               
             </ul>
           </div>
@@ -117,50 +40,28 @@
       </nav>
     </div>
     <ul class="sidenav" id="mobile-links">
-        <div class="container">
-            
-              </div>
-        <li>
-        <!-- Dropdown menu -->
-        <a class="dropdown-trigger teal-text" hover="true" data-target="dropdown3" href="#">1<i class="material-icons small teal-text right">arrow_drop_down</i></a>
-        <!-- Dropdown Structure -->
-        <ul id='dropdown3' class='dropdown-content collection'>
-            <li><a href="#" class="teal-text"><h6>1.1</h6></a></li>
-            <li><a href="#" class="teal-text"><h6>1.2</h6></a></li>
-        </ul>
+  
+      <li>
+        <a href="homepage.html" class="cyan-text"> <i class="material-icons cyan-text">home</i></a>
       </li>
       <li>
-        <a href="#AboutUs" class="teal-text">2</a>
+        <a href="#AboutUs" class="cyan-text">About Us</a>
       </li>
-      <li>
-        <a href="#" class="teal-text">3</a>
-      </li>
-      <li>
-        <a href="#" class="teal-text">4</a>
-      </li>
+      
+
     </ul>
 
     
-    <!-- Section: Icon Boxes -->
+    <!-- Section: Star Quiz -->
     <section class="section section-icons grey lighten-4 center">
       <div class="container">
         <div class="row">
-          <div class="col s12 m4">
+          
+          <div class="col s12 m12">
             <div class="card-panel">
-              <i class="material-icons large teal-text">check</i>
-              <h4>Quiz 1</h4>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="card-panel">
-              <i class="material-icons large teal-text">check</i>
-              <h4>Quiz 2</h4>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="card-panel">
-              <i class="material-icons large teal-text">check</i>
-              <h4>Quiz 3</h4>
+              <i class="material-icons large cyan-text">check</i>
+              <h4>Start Quiz</h4>
+              <a class="waves-effect waves-light btn-large cyan" id="start" href="./ques.html">Start Now</a>
             </div>
           </div>
         </div>
@@ -170,7 +71,7 @@
 
 
     <!-- Section: About Us -->
-    <section id="AboutUs" class="section section-aboutus teal darken-2 white-text center scrollspy">
+    <section id="AboutUs" class="section section-aboutus cyan darken-2 white-text center scrollspy">
       
           
             <h4>About Us</h4>
@@ -179,25 +80,25 @@
                 <div class="row">
                   <div class="col s12 m3">
                     <div class="card-panel">
-                      <i class="material-icons large teal-text">face</i>
+                      <i class="material-icons large cyan-text">face</i>
                       <h4 class="black-text">Ankith Praveen</h4>
                     </div>
                   </div>
                   <div class="col s12 m3">
                     <div class="card-panel">
-                      <i class="material-icons large teal-text">face</i>
+                      <i class="material-icons large cyan-text">face</i>
                       <h4 class="black-text">Abu Zar Talib</h4>
                     </div>
                   </div>
                   <div class="col s12 m3">
                     <div class="card-panel">
-                      <i class="material-icons large teal-text">face</i>
+                      <i class="material-icons large cyan-text">face</i>
                       <h4 class="black-text">Sneha Saraswat</h4>
                     </div>
                   </div>
                   <div class="col s12 m3">
                     <div class="card-panel">
-                      <i class="material-icons large teal-text">face</i>
+                      <i class="material-icons large cyan-text">face</i>
                       <h4 class="black-text">Vardhan Palod</h4>
                     </div>
                   </div>
@@ -213,7 +114,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
+    <script src="main.js"></script>
     <script>
       $(document).ready(function () {
         $('.sidenav').sidenav();
